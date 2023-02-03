@@ -41,7 +41,7 @@ endif()
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 3.2.0 REQUIRED)
+find_package(OpenCV 3.2.0  REQUIRED)
 find_package(Eigen3 3.1.0 REQUIRED)
 find_package(Pangolin REQUIRED)
 
@@ -57,7 +57,7 @@ ${Pangolin_INCLUDE_DIRS}
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 cuda_include_directories(
-  ${CUDA_TOOLKIT_ROOT_DIR}/samples/common/inc
+  /usr/local/cuda-8.0/NVIDIA_CUDA-8.0_Samples/common/inc
 )
 
 cuda_add_library(${PROJECT_NAME} SHARED
