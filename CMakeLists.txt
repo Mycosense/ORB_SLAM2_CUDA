@@ -57,7 +57,7 @@ ${Pangolin_INCLUDE_DIRS}
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 cuda_include_directories(
-  /usr/local/cuda-8.0/NVIDIA_CUDA-8.0_Samples/common/inc
+ ${PROJECT_SOURCE_DIR}/include/NVIDIA_CUDA-8.0_Samples/common/inc
 )
 
 cuda_add_library(${PROJECT_NAME} SHARED
